@@ -1,0 +1,18 @@
+type Socialrunner_User implements Node{
+    id: ID!
+    name: String!
+    email: String!
+    races: [Socialrunner_Race!] @relation(path: "Socialrunner_User=user.Socialrunner_Race")
+}
+
+type Socialrunner_Race implements Node & TimeStampedInterface{
+    id: ID!
+    user: Socialrunner_User!
+    location: String!
+    # time in meters
+    distance: Int!
+    # time in seconds
+    time: Int!
+    createdAt: DateTime!
+    lastUpdatedAt: DateTime
+}

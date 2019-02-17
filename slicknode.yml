@@ -1,4 +1,5 @@
 dependencies:
+  '@private/socialrunner': ./modules/socialrunner
+  auth: latest
   core: latest
   relay: latest
-  auth: latest

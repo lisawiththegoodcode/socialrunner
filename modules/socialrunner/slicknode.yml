@@ -1,0 +1,4 @@
+module:
+  id: '@private/socialrunner'
+  label: Socialrunner
+  namespace: Socialrunner

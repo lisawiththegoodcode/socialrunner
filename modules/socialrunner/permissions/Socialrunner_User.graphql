@@ -1,0 +1,13 @@
+query Socialrunner_UserPermission1 {
+  scope(role: ANONYMOUS, operations: [READ])
+}
+
+
+query Socialrunner_UserPermission2 {
+  scope(role: STAFF, operations: [CREATE, UPDATE, DELETE])
+}
+
+
+query Socialrunner_UserPermission3 {
+  scope(role: RUNTIME, operations: [CREATE, UPDATE, DELETE, READ])
+}
